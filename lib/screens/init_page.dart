@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:portafolio/screens/init_page/page_about_detail.dart';
 import 'package:portafolio/screens/init_page/page_about_me.dart';
+import 'package:portafolio/screens/init_page/page_contact.dart';
 import 'package:portafolio/screens/init_page/page_experience_study.dart';
+import 'package:portafolio/screens/init_page/page_finniu.dart';
 import 'package:portafolio/screens/init_page/page_one.dart';
 import 'package:portafolio/screens/init_page/page_projects.dart';
+import 'package:portafolio/screens/init_page/page_silver.dart';
 import 'package:portafolio/screens/init_page/page_two.dart';
 import 'package:portafolio/widgets/scaffold.dart';
 
@@ -27,6 +30,9 @@ class InitPage extends StatelessWidget {
             PageAboutDetail(controller: controller),
             PageExperienceStudy(controller: controller),
             PageProyect(controller: controller),
+            PageProyectFinniu(controller: controller),
+            PageProyectSilver(controller: controller),
+            PageContact(controller: controller)
           ],
         ),
       ),

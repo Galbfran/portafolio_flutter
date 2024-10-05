@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portafolio/constant/colors.dart';
 import 'package:portafolio/widgets/text.dart';
 
-class PageProyect extends StatelessWidget {
-  const PageProyect({
+class PageContact extends StatelessWidget {
+  const PageContact({
     super.key,
     required this.controller,
   });
@@ -12,17 +11,15 @@ class PageProyect extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const String title = "contacto";
+    const String description = "francogalbiati984@gmail.com";
     return GestureDetector(
       onTap: () => controller.nextPage(
         duration: const Duration(milliseconds: 500),
         curve: Curves.easeInOut,
       ),
       child: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: gradientColors,
-          ),
-        ),
+        decoration: BoxDecoration(color: Colors.amber[100]),
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         child: const Column(
@@ -30,15 +27,15 @@ class PageProyect extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             TextPortafolio(
-              text: "Proyectos",
+              text: title,
               size: 35,
               fontWeight: FontWeight.w900,
-              color: Colors.white,
+              maxLines: 3,
+              textAlign: TextAlign.center,
             ),
             TextPortafolio(
-              text: "Galbiati Franco",
+              text: description,
               size: 20,
-              color: Colors.white,
             ),
           ],
         ),

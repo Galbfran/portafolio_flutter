@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portafolio/constant/colors.dart';
 import 'package:portafolio/widgets/text.dart';
 
-class PageProyect extends StatelessWidget {
-  const PageProyect({
+class PageProyectSilver extends StatelessWidget {
+  const PageProyectSilver({
     super.key,
     required this.controller,
   });
@@ -18,11 +17,7 @@ class PageProyect extends StatelessWidget {
         curve: Curves.easeInOut,
       ),
       child: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: gradientColors,
-          ),
-        ),
+        decoration: BoxDecoration(color: Colors.indigo[100]),
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         child: const Column(
@@ -30,7 +25,7 @@ class PageProyect extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             TextPortafolio(
-              text: "Proyectos",
+              text: "proyecto silver",
               size: 35,
               fontWeight: FontWeight.w900,
               color: Colors.white,
